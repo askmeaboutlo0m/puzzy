@@ -1,2 +1,2 @@
 #!/bin/sh
-perl /app/vendor/perl-deps/bin/morbo puzzy -l http://*:$PORT
+perl puzzy daemon -m production -l http://*:$PORT

@@ -86,13 +86,9 @@ sub _routes {
 sub startup {
   my ($self) = @_;
   $self->secrets(['vTdS$/("vFe9TP5"=#btME*~STRYK']);
-  warn "------------\nDATABASE\n-------------\n";
   $self->_database;
-  warn "------------\nPLUGINS\n-------------\n";
   $self->_plugins;
-  warn "------------\nROUTES\n-------------\n";
   $self->_routes;
-  warn "------------\nDONE\n-------------\n";
 }
 
 
