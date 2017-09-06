@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <% if (title) { %><title><%= title %></title><% } %>
+    <style>
+      html {
+        background-color : white;
+        font-family      : serif;
+        padding-bottom   : 32em;
+      }
+
+      #main {
+        max-width    : 32em;
+        margin-left  : auto;
+        margin-right : auto;
+        text-align   : justify;
+      }
+
+      #text {
+        white-space : pre-line;
+      }
+
+      h1 {
+        text-align      : center;
+        text-decoration : underline;
+      }
+
+      .tooltip {
+        color           : #a400a4;
+        position        : relative;
+        text-decoration : underline;
+      }
+
+      .tooltip span {
+        color       : black;
+        background  : rgba(255, 187, 255, 0.95);
+        margin-left : -999em;
+        position    : absolute;
+        text-align  : center;
+      }
+
+      .tooltip:hover span {
+        border      : 1px solid rgba(0, 0, 0, 0.5);
+        position    : absolute;
+        left        : -8em;
+        margin-left : 0;
+        top         : 1em;
+        width       : 20em;
+        z-index     : 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <% if (title) { %><h1><%= title %></h1><% } %>
+      <div id="text"><%== $annotated %></div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+% title  'Not Found';
+% layout 'default';
+
+<div class="container">
+  <div class="page-header">
+    <h1><%= title %></h1>
+  </div>
+  <p class="lead">Whatever you were looking for, it ain't here.</p>
+  <p>You were looking for '<%= $c->req->url %>'</p>
+</div>
+
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->

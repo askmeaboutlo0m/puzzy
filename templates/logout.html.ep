@@ -1,0 +1,17 @@
+% title  'Logout';
+% layout 'default';
+
+<div class="container">
+  <div class="page-header">
+    <h1>Logout</h1>
+  </div>
+  <form method="post">
+    %= csrf_field
+    <div class="form-group">
+      <button type="submit" class="btn btn-danger">
+        <span class="glyphicon glyphicon-log-out"></span>
+        &nbsp;Logout
+      </button>
+    </div>
+  </form>
+</div>

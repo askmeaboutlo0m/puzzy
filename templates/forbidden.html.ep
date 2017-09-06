@@ -1,0 +1,23 @@
+% title  'Forbidden';
+% layout 'default';
+% my $login_url = url_for('/login');
+% if (my $want = $c->req->url->path) {
+%   $login_url->query(want => $want);
+% }
+
+<div class="container">
+  <div class="page-header">
+    <h1><%= title %></h1>
+  </div>
+  <p class="lead">You're not allowed here.</p>
+  <a class="btn btn-default" href="<%= $login_url %>">
+    Go to Login
+  </a>
+</div>
+
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->

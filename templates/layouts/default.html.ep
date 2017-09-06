@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    %= stylesheet '/css/bootstrap.min.css'
+  </head>
+  <body>
+    %= content
+    %= javascript '/js/jquery-3.2.1.min.js';
+    %= javascript '/js/bootstrap.min.js';
+    % if (stash 'js') {
+      % for (@{stash 'js'}) {
+        %= javascript $_
+      % }
+    % }
+  </body>
+</html>

@@ -1,0 +1,17 @@
+% title  'Server Error';
+% layout 'default';
+
+<div class="container">
+  <div class="page-header">
+    <h1><%= title %></h1>
+  </div>
+  <p class="lead">Something went really wrong.</p>
+  <p>This may or may not be your fault. Just try again and see if it works that time.</p>
+</div>
+
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->

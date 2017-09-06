@@ -1,0 +1,80 @@
+% layout 'default';
+% stash js => ['/js/annotate.js'];
+
+<div class="container">
+  <div class="page-header">
+    <h1><%= title %></h1>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 col-sm-5">
+      <p>Annotate text like this:</p>
+      <ul>
+        <li>[original text](note)</li>
+        <li>[original text](type|note)</li>
+        <li>[original text](type@author|note)</li>
+      </ul>
+      <p>Type and author are optional. Only first letter of type matters.</p>
+    </div>
+    <div class="col-md-4 col-sm-3">
+      <p>Supported types, use them as you see fit:</p>
+      <ul>
+        <li><strong>c</strong>ontent</li>
+        <li><strong>f</strong>orm</li>
+        <li><strong>g</strong>rammar</li>
+        <li><strong>s</strong>pelling</li>
+        <li><strong>t</strong>ense</li>
+      </ul>
+    </div>
+    <div class="col-md-4 col-sm-4">
+      <p>Select some text and hit <kbd><kbd>Alt</kbd> + <kbd>Shift</kbd> +
+      <kbd>(Letter)</kbd></kbd> to automatically insert the annotation. If you
+      typed something into the “Annotation Author” field below, it will be
+      inserted too.</p>
+      <p>When you're done, hit <em>Download</em> and give the file to whom it
+      may concern. Alternatively, send them the stuff from the text field and
+      tell them to use this page.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container well">
+  <form method="post" target="_blank">
+    <div class="form-group">
+      <div class="row">
+        <div class="col-xs-8">
+          <input name="title"
+               type="text"
+               class="form-control"
+               placeholder="Title">
+        </div>
+        <div class="col-xs-4">
+          <input id="author"
+               type="text"
+               class="form-control"
+               placeholder="Annotation Author">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea required
+            id="text"
+            name="text"
+            class="form-control"
+            rows="20"
+            placeholder="Text goes here"></textarea>
+    </div>
+    <div class="btn-group">
+      <button type="submit" name="annotate" class="btn btn-success">
+        <span class="glyphicon glyphicon-pencil"></span>
+        Annotate
+      </button>
+      <button type="submit" name="download" class="btn btn-primary">
+        <span class="glyphicon glyphicon-download"></span>
+        Download
+      </button>
+    </div>
+    <small class="text-muted">These open in a new tab. You won't lose what you
+    typed here.</small>
+  </form>
+</div>

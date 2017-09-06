@@ -1,0 +1,11 @@
+%== title
+%== '=' x length title
+% for my $cat (sort keys %$categories) {
+
+%== $cat
+%== '-' x length $cat
+
+%   for my $item (@{$categories->{$cat}}) {
+%==   "* $item"
+%   }
+% }
