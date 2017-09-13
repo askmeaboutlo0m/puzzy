@@ -86,7 +86,7 @@ sub _routes {
 sub startup {
   my ($self) = @_;
   $self->secrets(['vTdS$/("vFe9TP5"=#btME*~STRYK']);
-  $self->sessions->default_expiration(0);
+  $self->sessions->default_expiration('inf');
   $self->_database;
   $self->_plugins;
   $self->_routes;
